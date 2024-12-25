@@ -1,0 +1,9 @@
+INFO:root:开始加载模型
+ERROR:root:发生错误: Expected state_dict to be dict-like, got <class 'sklearn.pipeline.Pipeline'>.
+Traceback (most recent call last):
+  File "c:\OpenSource\member_inference\test.py", line 94, in start_attack
+    attack_model.load_state_dict(torch.load(self.attack_model_path, map_location=torch.device('cpu')))
+  File "C:\Python3_10_6\lib\site-packages\torch\nn\modules\module.py", line 1624, in load_state_dict
+    raise TypeError("Expected state_dict to be dict-like, got {}.".format(type(state_dict)))
+TypeError: Expected state_dict to be dict-like, got <class 'sklearn.pipeline.Pipeline'>.
+
